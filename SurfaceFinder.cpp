@@ -103,36 +103,27 @@ using namespace std;
     /*NOT UPDATED*/int NArea;                                     // Number of viable patches calculated
     static int flatness;
 
-    int GPoints = 50;
-    double GWeight[50];   //Gaussian Weights
-    double GAbs[50];      //Gaussian Abscissa
     ifstream TFile;
     ifstream VXFile;
     ifstream VYFile;
-//    /*NOT UPDATED*/ofstream SpecFile[1001];
-    /*NOT UPDATED*/static int GridT;
-    /*NOT UPDATED*/double CritTemp;
-    /*NOT UPDATED*/static double CellList[1000][2];
-    /*NOT UPDATED*/static double ShellEnergy;
-    /*NOT UPDATED*/static double ShellPX;
-    /*NOT UPDATED*/static double ShellPY;
-    /*NOT UPDATED*/static double ShellEMT[3];
-    /*NOT UPDATED*/static double GroundEnergy;
-    /*NOT UPDATED*/static int brake;
+
+    static int GridT;
+    double CritTemp;
+    static double CellList[1000][2];
+    static double ShellEnergy;
+    static double ShellPX;
+    static double ShellPY;
+    static double ShellEMT[3];
+    static double GroundEnergy;
+    static int brake;
     
-    /*NOT UPDATED*/double rem1; double rem2; double rem3; double rem4;
-    /*NOT UPDATED*/static double TensorEnergy;
-    /*NOT UPDATED*/static double TensorPX;
-    /*NOT UPDATED*/static double TensorPY;
+    static double TensorEnergy;
+    static double TensorPX;
+    static double TensorPY;
     
-    /*NOT UPDATED*/static double TensorKinetic;
-    /*NOT UPDATED*/static double ShellKinetic;
+    static double TensorKinetic;
+    static double ShellKinetic;
     
-    /*NOT UPDATED*/static int AbsorbtionEvents;
-    /*NOT UPDATED*/int rollmax = 100;
-    
-    /* Outside Functions */
-    /*NOT UPDATED*/void BoseTest(double Temp);
     
     /* Levi Civita */
     static double LC[4][4][4][4];
